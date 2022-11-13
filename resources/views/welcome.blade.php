@@ -13,8 +13,8 @@
     </head>
     <body>
         <div id="app">
-            <router-link to="/">Home</router-link>
-            <router-link to="/second">Second</router-link>
+            <router-link :to="{ name: 'home'}">Home</router-link>
+            <router-link :to="{ name: 'second'}">Second</router-link>
             <!--this will render the components in index-->
             <index></index>
         </div>
