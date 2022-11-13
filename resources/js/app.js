@@ -11,6 +11,13 @@ Vue.component(
     require("./components/ExampleComponent.vue").default
 ); //registering component
 
+
+Vue.component(
+    "example-2",
+    require("./components/Example2.vue").default
+); //registering component
+
+
 Vue.use(VueRouter); //inside every component can access to special object to router and route
 //hashtag in the url must display
 
