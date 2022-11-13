@@ -14,7 +14,10 @@
 
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <!--this will render the component-->
+            <router-view></router-view>
+        </div>
 
     </body>
 </html>
