@@ -15,8 +15,8 @@
     </head>
     <body>
         <div id="app">
-            <!--this will render the component-->
-            <router-view></router-view>
+            <!--this will render the components in index-->
+            <index></index>
         </div>
 
     </body>
