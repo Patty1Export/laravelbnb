@@ -5323,9 +5323,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
-    "itemTitle": String,
-    "itemContent": String,
-    "price": Number
+    itemTitle: String,
+    itemContent: String,
+    price: Number
+  },
+  mounted: function mounted() {
+    console.log(this.itemTitle);
+    //uncomment because to see why modifying prop is a bad idea
+    // this.itemTitle = "New Title";
   }
 });
 
@@ -5343,6 +5348,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _BookableListItem__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BookableListItem */ "./resources/js/bookables/BookableListItem.vue");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 //
 //
 //
@@ -5362,11 +5368,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
   components: {
     BookableListItem: _BookableListItem__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {
+    console.log(this.itemTitle);
+    //uncomment because to see why modifying prop is a bad idea
+    // this.itemTitle = "New Title";
+  },
+  //   beforeCreate() {
+  //     console.log("Before create");
+  //   },
+  created: function created() {
+    console.log("created");
   }
-});
+}, "mounted", function mounted() {
+  console.log("mounted");
+}));
 
 /***/ }),
 

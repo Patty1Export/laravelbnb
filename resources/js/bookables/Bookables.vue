@@ -22,5 +22,28 @@ export default {
   components: {
     BookableListItem,
   },
+  mounted() {
+    console.log(this.itemTitle);
+    //uncomment because to see why modifying prop is a bad idea
+    // this.itemTitle = "New Title";
+  },
+  //   beforeCreate() {
+  //     console.log("Before create");
+  //   },
+  created() {
+    console.log("created");
+  },
+  //   beforeMount() {
+  //     console.log("Before mount");
+  //   },
+  mounted() {
+    console.log("mounted");
+  },
+  //   beforeDestroy() {
+  //     console.log("Before destroy");
+  //   },
+  //   destroyed() {
+  //     console.log("destroyed");
+  //   },
 };
 </script>
